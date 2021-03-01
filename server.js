@@ -1,8 +1,12 @@
 // DEPENDENCIES
 const express = require('express');
 
-// EXPRESS CONFIGURATION
+// ROUTER
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
+const api = require('./routes/apiRoutes');
+const html = require('./routes/htmlRoutes');
 
+// EXPRESS CONFIGURATION
 // Tells node that we are creating an "express" server
 const app = express();
 
@@ -13,12 +17,9 @@ const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// ROUTER
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
-
+app.use(express.static('public'));
+app.use('/api', api);
+app.use('/', html);
 
 // LISTENER
 // The below code effectively "starts" our server
