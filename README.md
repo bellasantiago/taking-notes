@@ -20,9 +20,9 @@ For those who need to keep their tasks recorded. This app will allow you to ente
 
   ---
 
-  ## Installation⬇️
+  ## Heroku
   
-  You'll need to access the app on Heroku: 
+  You'll need to access the app on Heroku: (https://taking-notes-bellasantiago.herokuapp.com/)
 
   ---
 
