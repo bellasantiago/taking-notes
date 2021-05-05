@@ -15,6 +15,7 @@ For those who need to keep their tasks recorded. This app will allow you to ente
   - [Usage](#Usage📋)
   - [Contributors](#Contributors🧑‍💻👩‍💻)
   - [Future Contributions](#Future-Contributions💡)
+  - [Sample](#Sample🎥)
   - [Questions](#Questions❔)
   - [License](#license🔐)
 
@@ -40,6 +41,11 @@ For those who need to keep their tasks recorded. This app will allow you to ente
   ## Future Contributions💡
 
   For future contributions, please contact the owner.
+
+  ---
+  ## Sample🎥
+  
+  <img src="public/assets/img/Sample.png">
 
   ---
 

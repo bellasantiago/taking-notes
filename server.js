@@ -18,8 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static('public'));
-app.use('/api', api);
-app.use('/', html);
+app.use('./routes/apiRoutes', api);
+app.use('./routes/htmlRoutes', html);
 
 // LISTENER
 // The below code effectively "starts" our server
