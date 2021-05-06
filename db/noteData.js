@@ -27,21 +27,6 @@ class Save {
             return noteJSON;
         });
     }
-
-    addNote(note) {
-        const { title, text } = note;
-        if (!title || !text) {
-            throw new Error('Please type in the fields.');
-        }
-        // Use NANOID package to add unique IDs
-        const writeNote = { title, text, id: nanoid(10) };
-
-        // Retrieve Notes, add the new note, update notes
-        return this.noteSaved()
-            .then(notes => [...notes, writeNote])
-            .then(updatedNotes => this.write(updatedNotes))
-            .then(() => writeNote);
-    }
 }
 
 module.exports = new Save();
